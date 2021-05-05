@@ -1,0 +1,1 @@
+export const regex = /\S+@\S+.\S+/;

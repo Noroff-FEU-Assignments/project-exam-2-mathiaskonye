@@ -1,0 +1,28 @@
+.carousel .carousel-item {
+    height: 500px;
+    background-color: #000000;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 600px;
+  }
+.carousel-hotels-img {
+    opacity: 0.9;
+
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  display: none;
+}
+
+.carousel-control-prev-icon:after {
+  display: none;
+}

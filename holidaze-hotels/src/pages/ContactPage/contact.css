@@ -1,0 +1,21 @@
+.contact-image {
+    background-image: url("https://images.unsplash.com/photo-1549747905-1014b1519df8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=80");
+    background-size: cover;
+    height: 100%;
+    object-fit: fill;
+    min-height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+}
+
+@media only screen and (max-width: 992px) {
+    .row-images {
+        flex-direction: column-reverse;
+    }
+    .contact-image {
+        border-radius: 15px 15px 0px 0px;
+    }
+  }

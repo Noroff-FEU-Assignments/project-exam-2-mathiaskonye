@@ -1,0 +1,56 @@
+@font-face {
+    font-family: prompt-italic;
+    src: url(../../font/Prompt-BoldItalic.ttf);
+  }
+  @font-face {
+    font-family: prompt-medium;
+    src: url(../../font/Prompt-Medium.ttf);
+  }
+  @font-face {
+    font-family: prompt-light;
+    src: url(../../font/Prompt-Light.ttf);
+}
+@font-face {
+    font-family: raleway-regular;
+    src: url(../../font/Raleway-Regular.ttf);
+}
+@font-face {
+    font-family: raleway-medium;
+    src: url(../../font/Raleway-Medium.ttf);
+}
+@font-face {
+    font-family: raleway-bold;
+    src: url(../../font/Raleway-Bold.ttf);
+}
+h1 {
+    font-family: prompt-medium;
+}
+h2 {
+    font-family: prompt-medium;
+}
+h3 {
+    font-family: prompt-medium;
+}
+h4 {
+    font-family: prompt-medium;
+}
+h5 {
+    font-family: prompt-medium;
+}
+p {
+    font-family: raleway-regular;
+}
+::placeholder {
+    font-family: raleway-regular; 
+}
+.modal-title {
+    color: #9a40e4;
+}
+.h5 {
+   font-family: prompt-medium!important;
+   color: black;
+}
+.card-text {
+    font-family: prompt-light;
+    color: black;
+}

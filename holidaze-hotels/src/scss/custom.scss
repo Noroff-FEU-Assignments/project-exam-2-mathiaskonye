@@ -1,0 +1,155 @@
+.fa-user-circle {
+  color:#9a40e4;
+  font-size: 35px;
+}
+.fa-map-marker-alt {
+  color:#9a40e4;
+  font-size: 44px;
+}
+.fa-instagram {
+  font-size: 24px;
+  padding: 10px;
+}
+.fa-twitter {
+  font-size: 24px;
+  padding: 10px;
+}
+.fa-facebook {
+  font-size: 24px;
+  padding: 10px;
+}
+.fa-star {
+  color:#9a40e4;
+  font-size: 18px;
+}
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.footer-container {
+  background-color: black;
+  color: white;
+  margin-top: auto;
+}
+html, body {
+  height: 100%;
+ position: relative;
+}
+.footer-bottom {
+  height: calc(60vh);
+}
+.carousel .carousel-indicators li {
+  width: 15px;
+ height: 15px;
+ border-radius: 100%;
+ background-color: black;
+}
+.carousel-indicators .active {
+  background-color: #9a40e4!important;
+}
+.herobanner-hotels {
+  background-image: url("https://i.postimg.cc/gk6z5bYG/Columbia-Beach-Resort.jpg");
+  filter: opacity(90%);
+  background-size: 100%;
+  height: 100%;
+  min-width: 100%;
+  width: 100%;
+  color: black;
+  display: flex;
+  padding: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 15px;
+}
+.border-purple {
+  border: 1.5px solid #9a40e4!important;
+}
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  text-shadow: 2px 1px 10px black;
+}
+.hero-background-dark {
+  background-color: #0000006e;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { 
+  text-decoration: none!important;
+  text-shadow: 0px 0px 0.5px black; 
+  transition: ease-in .3s;
+}
+
+
+a:active { text-decoration: none; }
+
+.breadcrumb {
+  background-color: transparent!important;
+  font-family: raleway-medium;
+  padding-left: 0!important;
+}
+.admin-header {
+  background-color: #9a40e4;
+  color: white;
+}
+.admin-inquiries {
+  background-image: url("https://i.postimg.cc/N0pGN8T3/inquiries-img.jpg");
+  background-repeat: no-repeat;
+  color: white;
+    background-size: cover;
+    height: 100%;
+    object-fit: fill;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 0px 0px 15px;
+    transition: ease-in-out .3s;
+}
+.admin-messages {
+  background-image: url("https://i.postimg.cc/28Z6zZRW/messages-img.jpg");
+  background-repeat: no-repeat;
+  color: white;
+    background-size: cover;
+    height: 100%;
+    object-fit: fill;
+    min-height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 15px 15px 0px;
+    transition: ease-in-out .3s;
+}
+.admin-messages:hover {
+  color: #9a40e4;
+}
+.admin-inquiries:hover {
+  color: #9a40e4;
+}
+.admin-h1-font {
+  font-family: prompt-italic;
+}
+
+
+@import "./components/navbar.scss";
+@import "./components/carousel.scss";
+@import "./components/input.scss";
+@import "./components/buttons.scss";
+@import "./colors/colors.scss";
+@import "~bootstrap/scss/bootstrap.scss";

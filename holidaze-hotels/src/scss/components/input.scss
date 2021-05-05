@@ -1,0 +1,22 @@
+input {
+    border-radius: 15px!important;
+    border: 1px solid black!important;
+}
+textarea {
+    height: 100px!important;
+    border-radius: 15px!important;
+    border: 1px solid black!important;
+}
+.rounded-borders {
+    border-radius: 15px!important;
+}
+.modal-header {
+    border-radius: 15px 15px 0px 0px!important;
+}
+.modal-content {
+    border-radius: 15px!important;
+}
+.modal-open .container-fluid, .modal-open  .container {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
