@@ -1,0 +1,61 @@
+.admin-header {
+  background-color: #9a40e4;
+  color: white;
+}
+.admin-inquiries {
+  background-image: url("../../img/cabin-admin.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  height: 100%;
+  object-fit: fill;
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px 0px 0px 15px;
+  transition: ease-in-out 0.3s;
+}
+.admin-messages {
+  background-image: url("../../img/contact-admin.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  height: 100%;
+  object-fit: fill;
+  min-height: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+  transition: ease-in-out 0.3s;
+}
+.admin-messages:hover {
+  color: black;
+}
+.admin-inquiries:hover {
+  color: black;
+}
+.admin-h1-font {
+  font-family: prompt-italic;
+}
+.cardbody-bg-image{
+  background-image: url("../../img/admin-messages-img.jpg");
+  background-repeat: no-repeat;
+  color: white;
+  background-size: cover;
+  height: 100%;
+  object-fit: fill;
+  min-height: 500px;
+  width: 100%;
+}
+@media only screen and (max-width: 992px) {
+    .admin-messages {
+      border-radius: 15px 15px 0px 0px;
+    }
+    .admin-inquiries {
+        border-radius: 0px 0px 15px 15px;
+      }
+  }

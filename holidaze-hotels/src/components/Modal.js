@@ -4,6 +4,7 @@ import { APIURL, INQURL} from "../constants/api";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import { useForm } from "react-hook-form";
+import { regex } from "./Regex";
 
 export default function InqModal() {
 
@@ -18,10 +19,10 @@ export default function InqModal() {
 
     const schema = yup.object().shape({
         hotel_name: yup.string().required("Please enter the name of the hotel.").min(3, "Enter the name of hotel"),
-        guests: yup.number().required("Please enter number of guests.").min(1, "Minimum 1 guest."),
-        date_to: yup.number().required("Please choose a date.").min(6, "Choose a date"),
-        date_from: yup.number().required("Please choose a date.").min(6, "Choose a date"),
-        email: yup.string().required("Please enter a valid email address.").matches(/\S+@\S+.\S+/, "Your email is not valid."),
+        guests: yup.number().typeError("You must specify a number.").min(1, "Minimum 1 guest.").max(10, "Maximum 10 guests."),
+        date_to: yup.string().required("Please choose a check-in date.").min(6, "Choose a date"),
+        date_from: yup.string().required("Please choose a check-out date.").min(6, "Choose a date"),
+        email: yup.string().required("Please enter a valid email address.").matches(regex, "Your email is not valid."),
     });
 
 
@@ -85,7 +86,7 @@ export default function InqModal() {
           <Modal.Body>
 
 
-          {submitted && <h3 className="text-center text-success">Your message is sent.</h3>}
+          {submitted && <h4 className="text-center border-secondary mb-3 shadow-sm">✓ Your message is sent.</h4>}
           <Form className="border rounded-3 p-4" onSubmit={handleSubmit(onSubmit)}>
 
           

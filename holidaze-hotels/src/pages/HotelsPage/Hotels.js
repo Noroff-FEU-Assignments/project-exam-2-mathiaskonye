@@ -38,18 +38,19 @@ export default function Hotels() {
 
     return (
       <Container>
+          <title>Hotels</title>
         <Carousel fade>
           <Carousel.Item interval={9000}>
             <img
               className="d-block w-100 h-100 img-fluid carousel-hotels-img"
               src="https://i.postimg.cc/Ssv4TD3X/hotel-mamela-italy.jpg"
-              alt="Second slide"
+              alt="First slide"
             />
 
             <Carousel.Caption>
               <div className="hero-background-dark p-3">
                 <h3>Begin your adventure today</h3>
-                <p>
+                <p className="header-three-easy-steps">
                   <i className="fas fa-globe-africa"></i> holidaze
                 </p>
               </div>
@@ -59,13 +60,13 @@ export default function Hotels() {
             <img
               className="d-block w-100 h-100 img-fluid carousel-hotels-img"
               src="https://i.postimg.cc/jSHsx6w9/hotel-abbazia-italy.jpg"
-              alt="Third slide"
+              alt="Second slide"
             />
 
             <Carousel.Caption>
               <div className="hero-background-dark p-3">
                 <h3>Always the best hotels at holidaze</h3>
-                <p>
+                <p className="header-three-easy-steps">
                   <i className="fas fa-globe-africa"></i> holidaze
                 </p>
               </div>

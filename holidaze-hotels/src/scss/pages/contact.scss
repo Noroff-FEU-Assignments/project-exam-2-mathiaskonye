@@ -1,0 +1,25 @@
+.contact-image {
+  background-image: url("../../img/contact-img.jpg");
+  background-size: cover;
+  color: white;
+  height: 100%;
+  object-fit: fill;
+  min-height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+}
+.contact-text {
+  font-family: prompt-italic;
+}
+
+@media only screen and (max-width: 992px) {
+  .row-images {
+    flex-direction: column-reverse;
+  }
+  .contact-image {
+    border-radius: 15px 15px 0px 0px;
+  }
+}

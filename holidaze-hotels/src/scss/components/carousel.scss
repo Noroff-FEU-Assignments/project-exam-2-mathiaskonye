@@ -1,28 +1,48 @@
 .carousel .carousel-item {
-    height: 500px;
-    background-color: #000000;
-  }
-  
-  .item img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-height: 600px;
-  }
-.carousel-hotels-img {
-    opacity: 0.9;
+  height: 500px;
+  background-color: #000000;
+}
 
+.item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 600px;
+}
+.carousel-hotels-img {
+  opacity: 0.9;
 }
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
   background-image: none;
 }
 
-.carousel-control-next-icon:after
-{
+.carousel-control-next-icon:after {
   display: none;
 }
 
 .carousel-control-prev-icon:after {
   display: none;
+}
+.carousel-caption {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  text-shadow: 2px 1px 10px black;
+}
+.carousel .carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background-color: black;
+}
+.carousel-indicators .active {
+  background-color: #9a40e4 !important;
 }

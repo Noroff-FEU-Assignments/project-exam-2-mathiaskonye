@@ -14,7 +14,7 @@ class SimpleMap extends Component {
  
   render() {
     return (
-      <div style={{ height: '300px', width: '100%' }}>
+      <div className="mb-5" style={{ height: '300px', width: '100%' }}>
         <GoogleMapReact
           bootstrapURLKeys={{ key: "AIzaSyA-mkoDFuYMTGZ2oHfdi6H3beTxAeid-RI"}}
           defaultCenter={this.props.center}
@@ -23,7 +23,7 @@ class SimpleMap extends Component {
           <AnyReactComponent
             lat={59.955413}
             lng={30.337844}
-            text="My Marker"
+            text=""
           />
         </GoogleMapReact>
       </div>

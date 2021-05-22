@@ -50,6 +50,7 @@ export default function HotelDetail() {
 
   return (
     <>
+    <title>{hotel.name}</title>
       <Container>
         <Breadcrumb>
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
@@ -66,7 +67,7 @@ export default function HotelDetail() {
               alt={hotel.image}
             ></img>
           </Col>
-          <Col xs={12} sm={12} md={6} lg={6} xl={6}>
+          <Col className="mt-1" xs={12} sm={12} md={6} lg={6} xl={6}>
             <h3>{hotel.name} </h3>
             <h6>{hotel.destination}</h6>
             <p>{hotel.description} </p>
