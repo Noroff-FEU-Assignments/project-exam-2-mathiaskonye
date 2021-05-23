@@ -1,46 +1,6 @@
-.loading-container {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-html,
-body {
-  height: 100%;
-  position: relative;
-}
-a:link {
-  text-decoration: none;
-}
 
-a:visited {
-  text-decoration: none;
-}
 
-a:hover {
-  text-decoration: none !important;
-  text-shadow: 0px 0px 0.5px black;
-  transition: ease-in 0.3s;
-}
-
-a:active {
-  text-decoration: none;
-}
-
-.breadcrumb {
-  background-color: transparent !important;
-  font-family: raleway-medium;
-  padding-left: 0 !important;
-}
-.container-searchfield {
-  background-image: url("../img/search-image-1.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  object-fit: fill;
-  min-height: 350px;
-  width: 100%;
-}
-
+@import "./global.scss";
 @import "./components/hr.scss";
 @import "./components/border.scss";
 @import "./pages/contact.scss";

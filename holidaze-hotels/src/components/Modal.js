@@ -78,51 +78,92 @@ export default function InqModal() {
         <Button variant="primary" onClick={handleShow}>
           Book Now
         </Button>
-  
+
         <Modal size="md" show={show} onHide={handleClose} animation={false}>
           <Modal.Header closeButton>
-            <Modal.Title><h4 className="primary">Book Hotel</h4></Modal.Title>
+            <Modal.Title>
+              <h4 className="primary">Book Hotel</h4>
+            </Modal.Title>
           </Modal.Header>
           <Modal.Body>
+            {submitted && (
+              <h4 className="text-center border-secondary mb-3 shadow-sm">
+                ✓ Your message is sent.
+              </h4>
+            )}
+            <Form
+              className="border rounded-3 p-4"
+              onSubmit={handleSubmit(onSubmit)}
+            >
+              <h6>Hotel: </h6>
+              <input
+                className="form-control"
+                {...register("hotel_name")}
+                name="hotel_name"
+                value={hotel_name}
+                placeholder="Hotel..."
+                onChange={(e) => setHotelName(e.target.value)}
+              />
+              <p className="text-danger">{errors.hotel_name?.message}</p>
 
+              <h6>Guests: </h6>
+              <input
+                className="form-control"
+                {...register("guests")}
+                type="number"
+                min="1"
+                name="guests"
+                value={guests}
+                placeholder="How many guests?"
+                onChange={(e) => setGuests(e.target.value)}
+              />
+              <p className="text-danger">{errors.guests?.message}</p>
 
-          {submitted && <h4 className="text-center border-secondary mb-3 shadow-sm">✓ Your message is sent.</h4>}
-          <Form className="border rounded-3 p-4" onSubmit={handleSubmit(onSubmit)}>
+              <h6>Check in: </h6>
+              <input
+                className="form-control"
+                {...register("date_from")}
+                type="date"
+                name="date_from"
+                value={date_from}
+                placeholder="Date From..."
+                onChange={(e) => setDateFrom(e.target.value)}
+              />
+              <p className="text-danger">{errors.date_from?.message}</p>
 
-          
-        <h6>Hotel: </h6>
-        <input className="form-control" {...register('hotel_name')} name="hotel_name" value={hotel_name}  placeholder="Hotel..." onChange={(e) => setHotelName(e.target.value)} />
-        <p className="text-danger">{errors.hotel_name?.message}</p>
+              <h6>Check out: </h6>
+              <input
+                className="form-control"
+                {...register("date_to")}
+                type="date"
+                name="date_to"
+                value={date_to}
+                placeholder="Date To..."
+                onChange={(e) => setDateTo(e.target.value)}
+              />
+              <p className="text-danger">{errors.date_to?.message}</p>
 
-        
-        <h6>Guests: </h6>
-        <input className="form-control" {...register('guests')} type="number" min="1" name="guests" value={guests}  placeholder="How many guests?" onChange={(e) => setGuests(e.target.value)} />
-        <p className="text-danger">{errors.guests?.message}</p>
+              <h6>Email: </h6>
+              <input
+                className="form-control"
+                {...register("email")}
+                name="email"
+                type="email"
+                value={email}
+                placeholder="Enter your email..."
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <p className="text-danger">{errors.email?.message}</p>
 
-         
-        <h6>Check in: </h6>
-        <input className="form-control" {...register('date_from')} type="date" name="date_from" value={date_from}  placeholder="Date From..." onChange={(e) => setDateFrom(e.target.value)} />
-        <p className="text-danger">{errors.date_from?.message}</p>
-
-         
-        <h6>Check out: </h6>
-        <input className="form-control" {...register('date_to')} type="date" name="date_to" value={date_to}  placeholder="Date To..." onChange={(e) => setDateTo(e.target.value)} />
-        <p className="text-danger">{errors.date_to?.message}</p>
-
-         
-        <h6>Email: </h6>
-        <input className="form-control" {...register('email')} name="email" type="email" value={email} placeholder="Enter your email..." onChange={(e) => setEmail(e.target.value)} />
-        <p className="text-danger">{errors.email?.message}</p>
-
-         <button type="submit" className="btn btn-primary w-100">Submit</button>
-         <p className="text-muted">* By submitting you agree to Holdaze policies.</p>
-         </Form>
-
-
-
+              <button type="submit" className="btn btn-primary w-100">
+                Submit
+              </button>
+              <p className="text-muted">
+                * By submitting you agree to Holdaze policies.
+              </p>
+            </Form>
           </Modal.Body>
           <Modal.Footer>
-          
             <Button variant="secondary" onClick={handleClose}>
               Close
             </Button>

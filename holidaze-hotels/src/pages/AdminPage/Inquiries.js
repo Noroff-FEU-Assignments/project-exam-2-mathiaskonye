@@ -49,11 +49,10 @@ function InqList() {
       </Container>
       {inquiries.map(function (result) {
         return (
-          <Container>
+          <Container key={result.id}>
             <div
               className="col-sm-12 col-md-12 col-lg-12 col-xl-12 d-flex justify-items-center"
-              key={result.id}
-            >
+>
               <Card className="mt-5 mb-5 shadow-lg" style={{ width: "100%" }}>
                 <Card.Body className="cardbody-bg-image">
                   <Card.Title className="p-2 bg-black color-white text-center rounded">
